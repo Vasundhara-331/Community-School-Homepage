@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f5f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: #2e8b57;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #d0ffd8;
+}
+
+/* Hero */
+.hero {
+  background: url('https://via.placeholder.com/1600x500') no-repeat center center/cover;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn, .btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn {
+  background: #fff;
+  color: #2e8b57;
+}
+
+.btn:hover {
+  background: #d0ffd8;
+}
+
+.btn-secondary {
+  background: #2e8b57;
+  color: white;
+  margin-top: 1rem;
+}
+
+.btn-secondary:hover {
+  background: #3fa26d;
+}
+
+/* Section Layouts */
+.section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  color: #2e8b57;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+}
+
+.section img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/* Cards */
+.card {
+  background: #f9f9f9;
+  border-left: 6px solid #2e8b57;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+/* Contact Info */
+#contact ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+#contact li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+}
